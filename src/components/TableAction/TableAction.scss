@@ -1,6 +1,7 @@
 .table-action {
   display: grid;
   grid-template-columns: auto 1fr;
+  padding-bottom: 10px;
 
   .search > input[type="text"] {
     padding: 8px 5px;
@@ -20,9 +21,23 @@
 
   .entries-switcher {
     justify-self: flex-end;
+    padding-right: 10px;
 
-    .entries {
-      padding-left: 20px;
+    .btn {
+      font-size: 16px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 200ms ease-in-out;
+      cursor: pointer;
+      user-select: none;
+  
+      &.active {
+        background-color: $celadon-green;
+        font-weight: 800;
+        color: $white;
+        cursor: default;
+      }
     }
   }
 }

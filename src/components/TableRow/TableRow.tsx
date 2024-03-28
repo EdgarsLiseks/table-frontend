@@ -9,6 +9,10 @@ const TableRow = ({ id, title } : { id: string; title: string}) => {
     setIsEditing(true)
   }
 
+  const disableEdit = () => {
+    setIsEditing(false)
+  }
+
   const handleChange = (value: string) => {
     setNewTitle(value)
   }
@@ -48,14 +52,17 @@ const TableRow = ({ id, title } : { id: string; title: string}) => {
         <div>
           {
             isEditing ? (
-              <div>
+              <div className="editable">
                 <input
                   className={ isEditing ? 'input-text-field selected' : ''}
                   type="text"
                   placeholder={ title }
                   onChange={ (e) => handleChange(e.target.value)}
                 />
-                <button id={ id } type="submit" onClick={ updateTitle }>
+                <button className="button cancel" onClick={ disableEdit }>
+                  Cancel
+                </button>
+                <button className="button primary" id={ id } type="submit" onClick={ updateTitle }>
                   { isLoading ? 'Saving...' : 'Save'}
                 </button>
               </div>

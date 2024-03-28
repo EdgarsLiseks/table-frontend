@@ -1,5 +1,28 @@
 .table-row {
   display: grid;
   padding: 8px 0 8px 14px;
-  grid-template-columns: 5% 80% 10%;
+  grid-template-columns: 10% 90%;
+
+  .editable {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+  }
+
+  .editable {
+    .button {
+      font-weight: bold;
+      padding: 8px;
+      margin-right: 10px;
+
+      &.primary {
+        background-color: $celadon-green;
+        color: $white;
+      }
+
+      &.cancel {
+        background-color: orangered;
+        color: $white;
+      }
+    }
+  }
 }

@@ -25,9 +25,6 @@ const TableAction = ({
         </div>
 
         <div className="entries-switcher">
-          <div className="entries">
-            Displaying: { entriesPerPage }
-          </div>
           <div className="entries-action">
             {
               defaultValues.map((value, index) => {
