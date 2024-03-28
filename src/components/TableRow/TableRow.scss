@@ -21,9 +21,10 @@
       font-weight: bold;
       padding: 8px;
       margin-right: 10px;
+      cursor: pointer;
 
       &.primary {
-        background-color: $celadon-green;
+        background-color: $fern-green;
         color: $white;
       }
 

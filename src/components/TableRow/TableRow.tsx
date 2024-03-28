@@ -32,7 +32,7 @@ const TableRow = ({ id, title } : { id: string; title: string}) => {
       })
       const data = await res.json()
       
-      setIsLoading(true)
+      setIsLoading(false)
       setIsEditing(false)
 
       // Response from mock api
