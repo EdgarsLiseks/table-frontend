@@ -6,11 +6,13 @@ import usePagination from "../../hooks/usePagination"
 
 const Table = ({
   data,
+  loading,
   setSearchInput,
   entriesPerPage,
   setEntriesPerPage,
 }: {
   data: any;
+  loading: boolean;
   setSearchInput: any;
   entriesPerPage: number;
   setEntriesPerPage: any;
@@ -39,17 +41,24 @@ const Table = ({
         </div>
       </div>
 
-      <div className="table-data-row">
-        <div className="data">
-          { slice.map(({id, title}) => (
-            <TableRow
-              key={ id }
-              id={ id }
-              title={ title }
-            />
-          )) }
-        </div>
-      </div>
+      {
+        loading ? 
+        (
+          <div>Loading...</div>
+        ) : (
+          <div className="table-data-row">
+            <div className="data">
+              { slice.map(({id, title}) => (
+                <TableRow
+                  key={ id }
+                  id={ id }
+                  title={ title }
+                />
+              )) }
+            </div>
+          </div>
+        )
+      }
 
       <Pagination 
         range={ range }

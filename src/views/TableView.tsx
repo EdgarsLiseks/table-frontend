@@ -21,11 +21,11 @@ const TableView = () => {
           })
 
           setEvents(filteredData)
-          setLoading(false)
         } else {
           setEvents(data)
-          setLoading(false)
         }
+
+        setLoading(false)
       } catch (error) {
         console.log(error)
       }
@@ -38,6 +38,7 @@ const TableView = () => {
     <section className="container">
       <Table 
         data={ events }
+        loading={ loading }
         setSearchInput={ setSearchInput }
         entriesPerPage={ entriesPerPage }
         setEntriesPerPage={ setEntriesPerPage } />
