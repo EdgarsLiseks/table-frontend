@@ -3,6 +3,14 @@
   padding: 8px 0 8px 14px;
   grid-template-columns: 10% 90%;
 
+  &:nth-child(even) {
+    background-color: $honeydew-green;
+  }
+
+  &:hover {
+    background-color: $celadon-green;
+  }
+
   .editable {
     display: grid;
     grid-template-columns: 1fr auto auto;
