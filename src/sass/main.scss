@@ -1,0 +1,60 @@
+@import './typography';
+@import './colors';
+@import './variables';
+@import './input';
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $default-font;
+  max-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 42px auto;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $celadon-green; 
+  border-radius: 1px;
+  display: inline;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $celadon-green; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $fern-green;
+}
+
+button {
+  background-color: $white;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+}

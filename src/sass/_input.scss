@@ -1,0 +1,17 @@
+.btn {
+  padding: 8px 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+
+  &.-primary {
+    background-color: $celadon-green;
+    color: $white;
+    transition: background-color 500ms ease-in-out;
+
+    &:hover {
+      background-color: $fern-green;
+    }
+  }
+}

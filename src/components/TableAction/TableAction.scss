@@ -1,0 +1,28 @@
+.table-action {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  .search > input[type="text"] {
+    padding: 8px 5px;
+    font-size: 18px;
+    background-color: $fern-green;
+    transition: all 200ms ease-in-out;
+
+    &::placeholder {
+      color: $white;
+    }
+
+    &:hover {
+      color: $jet-gray;
+      background-color: $celadon-green;
+    }
+  }
+
+  .entries-switcher {
+    justify-self: flex-end;
+
+    .entries {
+      padding-left: 20px;
+    }
+  }
+}

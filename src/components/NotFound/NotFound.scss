@@ -1,0 +1,23 @@
+.not-found {
+  text-align: center;
+  
+  .title {
+    font-size: $notfound-title-size;
+    font-weight: $notfound-title-weight;
+    color: $notfound-title-color;
+  }
+
+  .subtitle {
+    font-size: $notfound-subtitle-size;
+    color: $outer-space-gray;
+    font-weight: $notfound-subtitle-weight;
+  }
+
+  .action {
+    margin-top: 20px;
+
+    .btn {
+      padding: 20px 30px;
+    }
+  }
+}

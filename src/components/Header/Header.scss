@@ -1,0 +1,15 @@
+.header {
+  display: grid;
+  position: sticky;
+  top: 0;
+
+  .logo {
+    position: absolute;
+    justify-self: center;
+    padding-top: 10px;
+
+    > img {
+      height: 100px;
+    }
+  }
+}

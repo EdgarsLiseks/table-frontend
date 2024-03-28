@@ -1,0 +1,12 @@
+.table-head-row {
+  display: grid;
+  grid-template-columns: 5% 80% 10%;
+  padding-left: 9px;
+  background-color: $fern-green;
+  color: $white;
+  padding: 10px;
+}
+
+.table {
+  margin-right: 10px;
+}

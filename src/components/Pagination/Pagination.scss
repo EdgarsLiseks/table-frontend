@@ -1,0 +1,26 @@
+.table-pagination {
+  display: flex;
+  gap: 14px;
+  position: relative;
+  top: 20px;
+
+  .pagination-btn {
+    height: 32px;
+    width: 32px;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 200ms ease-in-out;
+    cursor: pointer;
+    user-select: none;
+
+    &.active {
+      background-color: $celadon-green;
+      font-weight: 800;
+      color: $white;
+      cursor: default;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+//Not Found
+$notfound-title-size: $fs-xxxxl;
+$notfound-subtitle-size: $fs-l;
+$notfound-title-weight: $bold;
+$notfound-subtitle-weight: $extra-bold;
+$notfound-title-color: $battleship-gray;
+$notfound-subtitle-color: $jet-gray;
+
+//Navigation
+$nav-fs: $fs-s; 
+$nav-fw: $extra-bold;
+$nav-item-color: $white;
+$nav-left-gradient: linear-gradient(to left, rgba(154,225,157,1) 0%, rgba(83,122,90,0.8) 54%) right;
+$nav-left-gradient-active: linear-gradient(to right, rgba(83,122,90,0.8) 0%, rgba(154,225,157,1) 54%) left;
+$nav-right-gradient: linear-gradient(to right, rgba(154,225,157,1) 0%, rgba(83,122,90,0.8) 54%) left;
+$nav-right-gradient-active: linear-gradient(to left, rgba(83,122,90,0.8) 0%, rgba(154,225,157,1) 54%) right;
+
+//Footer
+$footer-fs: $fs-xs;
+$footer-fw: $bold;
+$footer-text-color: $jet-gray;
+$footer-border-color: $celadon-green;
